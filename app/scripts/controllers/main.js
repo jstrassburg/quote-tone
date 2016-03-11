@@ -13,20 +13,21 @@ angular.module('quoteToneApp')
     $scope.writingLables =['Analytical', 'Confident', 'Tentative'];
     $scope.socialLables =['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism'];
 
-    $scope.quotes = [
-      {
-        text: 'Quote 1',
-        author: 'Author 1',
-        emotionalData: [[0.65, 0.59, 0.90, 0.81, 0.56]],
-        writingData: [[0.25, 0.22, 0.84]],
-        socialData: [[0.69, 0.22, 0.82, 0.42, 0.02]]
-      },
-      {
-        text: 'Quote 2',
-        author: 'Author 2',
-        emotionalData: [[0.99, 0.22, 0.33, 0.45, 0.6]],
-        writingData: [[0.95, 0.52, 0.8]],
-        socialData: [[0.29, 0.62, 0.12, 0.12, 0.12]]
-      }
-    ];
+$scope.quotes = [
+  {
+    text: 'A thing that is great is great.',
+    author: 'Some One',
+    emotionalData: [[0.03, 0.04, 0.16, 0.77, 0.06]],
+    writingData: [[0.84, 0.00, 0.00]],
+    socialData: [[0.71, 0.40, 0.15, 0.01, 0.37]],
+  },
+  {
+    text: 'Another thing that I said that was awesome.',
+    author: 'Someone Else',
+    emotionalData: [[0.23, 0.09, 0.28, 0.17, 0.12]],
+    writingData: [[0.95, 0.00, 0.00]],
+    socialData: [[0.07, 0.03, 0.89, 0.72, 0.93]],
+  },
+];
+
   });
