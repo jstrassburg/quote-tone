@@ -9,25 +9,27 @@
 </div>
 
 <div class="row marketing">
-  <container>
-    <blockquote>
-      <p>Something, blah blah blah blah blah blah.</p>
-      <footer>Someone</footer>
-    </blockquote>
-  </container>
-  <div class="col-md-4">
-    <h5>Emotional Tone</h5>
-    <canvas id="radar" class="chart chart-radar" chart-data="emotionalData" chart-labels="emotionalLables">
-    </canvas> 
-  </div>
-  <div class="col-md-4">
-    <h5>Writing Tone</h5>
-    <canvas id="radar" class="chart chart-radar" chart-data="writingData" chart-labels="writingLables">
-    </canvas> 
-  </div>
-  <div class="col-md-4">
-    <h5>Social Tone</h5>
-    <canvas id="radar" class="chart chart-radar" chart-data="socialData" chart-labels="socialLables">
-    </canvas> 
+  <div class="row marketing" ng-repeat="quote in quotes">
+    <container>
+      <blockquote>
+        <p>{{ quote.text }}</p>
+        <footer>{{ quote.author }}</footer>
+      </blockquote>
+    </container>
+    <div class="col-md-4">
+      <h5>Emotional Tone</h5>
+      <canvas id="radar" class="chart chart-radar" chart-data="quote.emotionalData" chart-labels="emotionalLables">
+      </canvas> 
+    </div>
+    <div class="col-md-4">
+      <h5>Writing Tone</h5>
+      <canvas id="radar" class="chart chart-radar" chart-data="quote.writingData" chart-labels="writingLables">
+      </canvas> 
+    </div>
+    <div class="col-md-4">
+      <h5>Social Tone</h5>
+      <canvas id="radar" class="chart chart-radar" chart-data="quote.socialData" chart-labels="socialLables">
+      </canvas> 
+    </div>
   </div>
 </div>
