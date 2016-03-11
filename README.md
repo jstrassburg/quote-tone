@@ -1,5 +1,7 @@
 # quote-tone
 
+http://quote-tone.herokuapp.com/
+
 Since the IBM API has quotas and is only free during the beta, if you'd like to contribute quotes please submit a pull request updating quotes.txt with
 
         author: quote
