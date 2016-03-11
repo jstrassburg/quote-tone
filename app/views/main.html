@@ -1,23 +1,32 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    Analyzing the tone of famous quotes using the 
+    <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/tone-analyzer.html">
+      IBM Watson Tone Analyzer Service
+    </a>
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class="row">
+  <container>
+    <blockquote>
+      <p>Here is a thing that happened...</p>
+      <footer>Someone</footer>
+    </blockquote>
+  </container>
+  <div class="col-md-4">
+    <h5>Emotional Tone</h5>
+    <canvas id="radar" class="chart chart-radar" chart-data="emotionalData" chart-labels="emotionalLables">
+    </canvas> 
+  </div>
+  <div class="col-md-4">
+    <h5>Writing Tone</h5>
+    <canvas id="radar" class="chart chart-radar" chart-data="writingData" chart-labels="writingLables">
+    </canvas> 
+  </div>
+  <div class="col-md-4">
+    <h5>Social Tone</h5>
+    <canvas id="radar" class="chart chart-radar" chart-data="socialData" chart-labels="socialLables">
+    </canvas> 
+  </div>
 </div>
